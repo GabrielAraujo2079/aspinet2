@@ -1,0 +1,64 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #000;
+}
+/*CSS do forms cadastro */
+.form-text {
+    color: white;
+}
+
+.form-label {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+h5 {
+    color: white
+
+}
+/*Produtos cards*/
+
+.produtos .card {
+    background-color: #545454;
+    color: white;
+    border: none;
+}
+
+.produtos .card-body {
+    background-color: #545454;
+}
+
+.produtos .card-title {
+    color: white;
+}
+
+.modal-content {
+    background-color: #000;
+    color: #fff;
+}
+
+.modal-header, .modal-footer {
+    border-color: #333;
+}

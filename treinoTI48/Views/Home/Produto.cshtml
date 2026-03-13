@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Produtos";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Produto em destaque.</p>
+
+<div class="container mt-4 produtos">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Produto 1 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/imagens/memoriaRim.jpg" class="card-img-top" alt="Produto 1">
+                <div class="card-body">
+                    <h5 class="card-title">Memoria *RIM*</h5>
+                    <p class="card-text text-success fw-bold">$9999999.99</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="~/imagens/batata.jpeg" class="card-img-top" alt="Produto 2">
+                <div class="card-body">
+                    <h5 class="card-title">Batata /KG</h5>
+                    <p class="card-text text-success fw-bold">$5.00</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 3 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShrbUMRNBlTQjZuxAY9D5aocp_nDlbu4yp-FXWwQRzEQIP0dxX" class="card-img-top" alt="Produto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Camaro ZL1</h5>
+                    <p class="card-text text-success fw-bold">R$ 500.000</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://admin.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/11/gta64.jpg?w=419&h=283&crop=0" class="card-img-top" alt="Produto 4">
+                <div class="card-body">
+                    <h5 class="card-title">GTA 6</h5>
+                    <p class="card-text text-success fw-bold">$ 400.0</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 5 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://jennymodd.com/wp-content/uploads/2026/02/Jenny-Mod.webp" class="card-img-top" alt="Produto 5">
+                <div class="card-body">
+                    <h5 class="card-title">Jenny mod</h5>
+                    <p class="card-text text-success fw-bold">Free</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 6 -->
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://i.pinimg.com/originals/ef/e1/a7/efe1a7cfac9ebd8d1a32cbc5a6399ac2.jpg" class="card-img-top" alt="Produto 3">
+                <div class="card-body">
+                    <h5 class="card-title">Doblo</h5>
+                    <p class="card-text text-success fw-bold">R$ 63.00</p>
+                    <a href="#" class="btn btn-primary">Comprar</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Modal Comprar -->
+<div class="modal fade" id="modalComprar" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Comprar Produto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h6 id="modalNomeProduto"></h6>
+                <p id="modalPrecoProduto" class="text-success fw-bold"></p>
+                <label for="quantidade" class="form-label">Quantidade:</label>
+                <input type="number" id="quantidade" class="form-control" value="1" min="1" max="99">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" id="btnConfirmarCompra">Confirmar Compra</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/scriptProdutos.js"></script>
+}
